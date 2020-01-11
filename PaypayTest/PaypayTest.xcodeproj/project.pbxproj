@@ -14,6 +14,7 @@
 		5432308923CA2D6C00218E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5432308723CA2D6C00218E62 /* LaunchScreen.storyboard */; };
 		5432309423CA2D6C00218E62 /* PaypayTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432309323CA2D6C00218E62 /* PaypayTestTests.swift */; };
 		5432309F23CA2D6C00218E62 /* PaypayTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5432309E23CA2D6C00218E62 /* PaypayTestUITests.swift */; };
+		543230B023CA4CC300218E62 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543230AF23CA4CC300218E62 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		5432309A23CA2D6C00218E62 /* PaypayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaypayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5432309E23CA2D6C00218E62 /* PaypayTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaypayTestUITests.swift; sourceTree = "<group>"; };
 		543230A023CA2D6C00218E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		543230AE23CA4CC300218E62 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		543230AF23CA4CC300218E62 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		5432307D23CA2D6C00218E62 /* PaypayTest */ = {
 			isa = PBXGroup;
 			children = (
+				543230AC23CA4C8F00218E62 /* Connection */,
 				5432307E23CA2D6C00218E62 /* AppDelegate.swift */,
 				5432308023CA2D6C00218E62 /* ViewController.swift */,
 				5432308223CA2D6C00218E62 /* Main.storyboard */,
@@ -123,6 +127,23 @@
 				543230A023CA2D6C00218E62 /* Info.plist */,
 			);
 			path = PaypayTestUITests;
+			sourceTree = "<group>";
+		};
+		543230AC23CA4C8F00218E62 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				543230AD23CA4CA500218E62 /* Reachability */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		543230AD23CA4CA500218E62 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				543230AE23CA4CC300218E62 /* Reachability.h */,
+				543230AF23CA4CC300218E62 /* Reachability.swift */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +282,7 @@
 			files = (
 				5432308123CA2D6C00218E62 /* ViewController.swift in Sources */,
 				5432307F23CA2D6C00218E62 /* AppDelegate.swift in Sources */,
+				543230B023CA4CC300218E62 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
